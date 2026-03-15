@@ -1,9 +1,17 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lexend";
   background-color: #dfecff;
   padding: 0px;
   margin: 0px
 }
+
+.lexend-abc123> {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 /* nav styles */
 
@@ -133,7 +141,7 @@ br {
 .caption {
   color:#6d6d6d;
   font-size: 16px;
-  font-weight: lighter;
+  font-weight: 300;
   margin-top: 5px;
   margin-bottom: 5px;
 }
