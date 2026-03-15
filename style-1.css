@@ -257,7 +257,7 @@ a:hover {
 
 @media (min-width: 601px) {
   body{
-  font-size: 18px;
+  font-size: 16px;
   }
     .nav-header{
     font-size: 18px;
@@ -266,22 +266,22 @@ a:hover {
     font-size: 36px;
   }
   .footer-main{
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   body{
-  font-size: 24px;
+  font-size: 18px;
   }
   .nav-header{
-    font-size: 24px;
+    font-size: 22px;
   }
   .logo{
     font-size: 48px;
   }
   .footer-main{
-    font-size: 24px;
+    font-size: 18px;
   }
 }
