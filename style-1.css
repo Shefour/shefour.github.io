@@ -1,8 +1,8 @@
 body {
   font-family: "Lexend";
   background-color: #dfecff;
-  padding: 0px;
-  margin: 0px
+  padding: 0;
+  margin: 0;
 }
 
 .lexend-abc123> {
@@ -13,16 +13,20 @@ body {
 }
 
 
+.wrapper{
+  background: transparent;
+}
+
 /* nav styles */
 
-.nav-header {
+.nav-wrapper {
     display: flex;
     align-items: center;
     padding: 20px 40px;
     background-color: #fff;
 }
 
-.nav-header a {
+.nav-wrapper a {
     text-decoration: none;
     color: #333;
     margin: 0 15px;
@@ -31,17 +35,17 @@ body {
     transition: 0.3s;
 }
 
-.nav-first, .nav-third {
+.nav-links, .nav-search {
     flex: 1;
     display: flex;
 }
-.nav-second{
+.nav-logo{
   display: flex;
   justify-content: center;
   flex: 1;
 }
 
-.nav-third {
+.nav-search {
     justify-content: flex-end;
 }
 
@@ -166,7 +170,7 @@ br {
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
