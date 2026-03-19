@@ -5,13 +5,14 @@ body {
   background-image: url(assets/images/background_2.svg);
   font-family: "Mogra", system-ui;
   font-weight: 200;
-  
+  scrollbar-color: #583704 #d2a56d;
+  scrollbar-width: thin;
 }
 
 
 .wrapper{
   width: 1280px;
-  height: 200vh;
+  height: 300vh;
   margin: 0 auto;
   background-color: #d2a56d;
   display: flex;
@@ -91,7 +92,7 @@ body {
 
 main {
   order: 3;
-  height: 200vh;
+  height: 100%;
   width: calc(100% - 205px);
   overflow-y: auto;
   background-color: #e9dccb;
