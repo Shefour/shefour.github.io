@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kornel Olkowski (57834) - PTW LAB C</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="scripts.js" defer></script>
+
+
+    <link rel="stylesheet" href="leaflet.css" />
+    <script src="leaflet.js"></script>
+    <script src="leaflet-image.js"></script>
+</head>
+<body>
+    <main>
+        <section id="left-panel">
+            <h3>Interactive Map</h3>
+            <div id="map"></div>
+            <div id="buttons"> 
+                <button id="getLocation">My Location</button>
+                <button id="saveButton">Save Map</button>
+                <button id="notificationsButton">Enable Alerts</button>
+                <button id="testButton">test button</button>
+            </div>
+        </section>
+
+        <section id="right-panel">
+            <section id="snapshot-container">
+                <h3>Saved Map</h3>
+                <canvas id="rasterMap" width="500" height="300"></canvas>
+            </section>
+
+            <section id="puzzle-container">
+                <h3>Solve Puzzle</h3>
+                <div id="puzzle-board"></div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

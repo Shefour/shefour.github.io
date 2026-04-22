@@ -1,0 +1,115 @@
+body {
+  /* From https://uigradients.com */
+  background: #00b4db; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083b0, #00b4db); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083b0, #00b4db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #020c16;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px;
+  gap: 30px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#left-panel, #right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.74);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h3 {
+  margin-top: 0;
+  color: #1a2025;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+#map {
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+button#notificationsButton { background: #95a5a6; }
+
+button#notificationsButton:hover{
+  background: #95a5a6;
+  background-color: #2980b9; }
+
+#rasterMap {
+  border-radius: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+#puzzle-board {
+  display: grid;
+  grid-template-columns: repeat(4, 125px);
+  grid-template-rows: repeat(4, 75px);
+  gap: 2px;
+  background: rgba(0,0,0,0.05);
+  padding: 4px;
+  border-radius: 12px;
+}
+
+.puzzle-piece {
+  width: 125px;
+  height: 75px;
+  cursor: grab;
+  border-radius: 4px;
+}
+
+.puzzle-piece:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.puzzle-piece:active { cursor: grabbing; }
