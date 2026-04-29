@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kornel Olkowski (57834) - PTW LAB D</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="scripts.js" defer></script>
+    <link
+        rel="preload"
+        as="image"
+        href="assets/images/bg/01.jpg"
+    />
+</head>
+
+<body>
+    <main>
+        <div id="bg-overlay"></div>
+        <section id="searchBox" class="panel">
+            <div id="statusHeader">
+                <h1 id="timeDisplay">00:00</h1>
+                <p id="greetingDisplay"></p>
+            </div>
+            <hr class="panel-divider">
+            <form id="searchForm">
+                <input type="text" id="citySearch" placeholder="Enter city name..." required>
+                <button type="submit" id="searchBtn">Check Weather</button>
+            </form>
+        </section>
+
+        <div id="currentOutput"></div>
+        <div id="forecastOutput"></div>
+    </main>
+</body>
+
+</html>
