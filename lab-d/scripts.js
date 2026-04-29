@@ -55,7 +55,10 @@ function getCurrentWeather(city) {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   xhr.open("GET", url);
   xhr.onload = () => {
-    if (xhr.status === 200) renderCurrent(JSON.parse(xhr.responseText));
+    if (xhr.status === 200) {
+      console.log("Weather data received successfully");
+      renderCurrent(JSON.parse(xhr.responseText));
+    }
   };
   xhr.send();
 }
