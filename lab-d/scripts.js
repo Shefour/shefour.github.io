@@ -56,8 +56,9 @@ function getCurrentWeather(city) {
   xhr.open("GET", url);
   xhr.onload = () => {
     if (xhr.status === 200) {
-      console.log("Weather data received successfully");
-      renderCurrent(JSON.parse(xhr.responseText));
+      const data = JSON.parse(xhr.responseText);
+      console.log("API: ", data);
+      renderCurrent(data);
     }
   };
   xhr.send();
