@@ -1,8 +1,8 @@
 // przekonwertowana kopia z typescripta, aby działało na github pages
 var stylesMap = {
-    "style1": "/style-1.css",
-    "style2": "/style-2.css",
-    "style3": "/style-3.css"
+    "style1": "public/style-1.css",
+    "style2": "public/style-2.css",
+    "style3": "public/style-3.css"
 };
 var currentStyleKey = "style1";
 var head = document.querySelector("head");
