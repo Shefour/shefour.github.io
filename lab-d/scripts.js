@@ -55,7 +55,11 @@ function getCurrentWeather(city) {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   xhr.open("GET", url);
   xhr.onload = () => {
-    if (xhr.status === 200) renderCurrent(JSON.parse(xhr.responseText));
+    if (xhr.status === 200) {
+      const data = JSON.parse(xhr.responseText);
+      console.log("API: ", data);
+      renderCurrent(data);
+    }
   };
   xhr.send();
 }
@@ -64,7 +68,11 @@ function getCurrentWeather(city) {
 async function getForecast(city) {
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
   const res = await fetch(url);
-  if (res.ok) renderForecast(await res.json());
+  if (res.ok) {
+    const data = await res.json();
+    console.log("Fetch: ", data);
+    renderForecast(data);
+  }
 }
 
 function renderCurrent(data) {
