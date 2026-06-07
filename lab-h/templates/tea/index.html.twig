@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tea index{% endblock %}
+
+{% block body %}
+    <h1>Tea index</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for tea in teas %}
+            <tr>
+                <td>{{ tea.id }}</td>
+                <td>{{ tea.name }}</td>
+                <td>{{ tea.type }}</td>
+                <td>{{ tea.description }}</td>
+                <td>
+                    <a href="{{ path('app_tea_show', {'id': tea.id}) }}">Show</a>
+                    <a href="{{ path('app_tea_edit', {'id': tea.id}) }}">Edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">No records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_tea_new') }}" class="btn btn-primary mt-2">Create new</a>
+{% endblock %}
