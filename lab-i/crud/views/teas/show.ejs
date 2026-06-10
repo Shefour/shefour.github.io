@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<h1><%= tea.name %></h1>
+<article>
+    <p>Type: <%= tea.type %></p>
+    <p><%= tea.description %></p>
+</article>
+
+<ul class="action-list">
+    <li><a href="/teas">Back to list</a></li>
+    <li><a href="/teas/<%= tea.id %>/edit">Edit</a></li>
+</ul>
+
+<%- include('../partials/footer') %>

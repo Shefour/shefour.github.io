@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<h1>Edit Tea <%= tea.name %> (<%= tea.id %>)</h1>
+
+<form action="/teas/edit" method="POST" class="edit-form">
+    <%- include('_form') %>
+    <input type="hidden" name="id" value="<%= tea.id %>">
+</form>
+
+<ul class="action-list">
+    <li><a href="/teas">Back to list</a></li>
+    <li>
+        <form action="/teas/delete" method="POST">
+            <input type="hidden" name="id" value="<%= tea.id %>">
+            <input type="submit" value="Delete" onclick="return confirm('Are you sure?')">
+        </form>
+    </li>
+</ul>
+
+<%- include('../partials/footer') %>

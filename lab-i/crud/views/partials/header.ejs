@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title || 'Custom Framework' %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body class="<%= typeof bodyClass !== 'undefined' ? bodyClass : '' %>">
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/teas">Teas</a></li>
+    </ul>
+</nav>
+<main>

@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<h1>Tea List</h1>
+
+<a href="/teas/create">Create new</a>
+
+<ul class="index-list">
+    <% teas.forEach(function(tea) { %>
+        <li>
+            <h3><%= tea.name %></h3>
+            <ul class="action-list">
+                <li><a href="/teas/<%= tea.id %>">Details</a></li>
+                <li><a href="/teas/<%= tea.id %>/edit">Edit</a></li>
+            </ul>
+        </li>
+    <% }); %>
+</ul>
+
+<%- include('../partials/footer') %>

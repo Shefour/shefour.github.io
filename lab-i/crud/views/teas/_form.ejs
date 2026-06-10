@@ -1,0 +1,4 @@
+<label>Name: <input type="text" name="tea[name]" value="<%= typeof tea !== 'undefined' ? tea.name : '' %>"></label><br>
+<label>Type: <input type="text" name="tea[type]" value="<%= typeof tea !== 'undefined' ? tea.type : '' %>"></label><br>
+<label>Description: <textarea name="tea[description]"><%= typeof tea !== 'undefined' ? tea.description : '' %></textarea></label><br>
+<button type="submit">Submit</button>
