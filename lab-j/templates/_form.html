@@ -1,0 +1,19 @@
+<div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="{% if tea %}{{ tea['name'] }}{% endif %}">
+</div>
+
+<div class="form-group">
+    <label for="type">Type</label>
+    <input type="text" id="type" name="type" value="{% if tea %}{{ tea['type'] }}{% endif %}">
+</div>
+
+<div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" id="description" name="description" value="{% if tea %}{{ tea['description'] }}{% endif %}">
+</div>
+
+<div class="form-group">
+    <label></label>
+    <input type="submit" value="Submit">
+</div>

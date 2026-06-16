@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Create Tea</h1>
+    <form action="{{ url_for('create') }}" method="post" class="edit-form">
+        {% include "_form.html" %}
+        <input type="hidden" name="action" value="tea-create">
+    </form>
+
+    <a href="{{ url_for('index') }}">Back to list</a>
+{% endblock %}

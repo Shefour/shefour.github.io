@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Tea List</h1>
+
+    <a href="{{ url_for('create') }}">Create new</a>
+
+    <ul class="index-list">
+        {% for tea in teas %}
+            <li><h3>{{ tea['name'] }}</h3>
+                <ul class="action-list">
+                    <li><a href="{{ url_for('show', id=tea['id']) }}">Details</a></li>
+                    <li><a href="{{ url_for('edit', id=tea['id']) }}">Edit</a></li>
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
